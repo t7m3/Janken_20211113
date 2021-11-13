@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Janken_20211113</string>
+    <string name="janken_text">じゃん・けん・・・</string>
+    <string name="back_text">戻る</string>
 </resources>
