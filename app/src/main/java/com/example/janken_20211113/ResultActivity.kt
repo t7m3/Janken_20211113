@@ -10,6 +10,15 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val id = intent.getIntExtra("MY_HAND", 0)
+
+        when(id){
+            R.id.gu -> binding.myHandImage.setImageResource(R.drawable.gu)
+            R.id.choki -> binding.myHandImage.setImageResource(R.drawable.choki)
+            R.id.pa -> binding.myHandImage.setImageResource(R.drawable.pa)
+
+            //else -> binding.myHandImage.setImageResource(R.drawable.pa)
+        }
 
         binding.backButton.setOnClickListener{finish()}
     }
